@@ -1,6 +1,6 @@
 import { Controller, Get, Query } from '@nestjs/common';
 import { ApiOperation } from '@nestjs/swagger';
-import { TestService } from './test.service';
+import { TestService } from './keyword.service';
 
 @Controller('test')
 export class TestController {
