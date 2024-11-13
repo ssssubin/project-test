@@ -5,6 +5,7 @@ import { MySqlService } from 'src/my-sql/my-sql.service';
 export class RegionService {
   constructor(private mysqlService: MySqlService) {}
 
+  // 사용자가 선택한 지역에 속해있는 여행지 리스트 반환하는 함수
   async getDestination(city: string) {
     // 도시아이디 조회
     const foundCityId = await this.mysqlService.findCityId(city);
