@@ -3,7 +3,7 @@ import { Injectable } from '@nestjs/common';
 import { MySqlService } from 'src/my-sql/my-sql.service';
 
 @Injectable()
-export class TestService {
+export class KeywordService {
   constructor(private mysqlService: MySqlService) {}
 
   // 여행지별 키워드 리스트 반환하는 함수
